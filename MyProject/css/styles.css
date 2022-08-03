@@ -1,60 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-    --color-red: #F03C42;
-    --color-white: #fff;
-    --bg-dark-blue: #222374;
-    --bg-light-gray: #CCCCCC;
-    --text-black: #000000;  
+  --color-red: #f03c42;
+  --color-white: #fff;
+  --bg-dark-blue: #222374;
+  --bg-light-gray: #cccccc;
+  --text-black: #000000;
 }
 
 * {
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: unset;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: unset;
 }
 
 header {
-    background-color: var(--color-red);
-    height: 100px;
-    display: flex;
-    align-items: center;
+  background-color: var(--color-red);
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 nav {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container h1 {
-    color: var(--color-white);
-    font-weight: 700;
-    font-size: 18px;
-    width: 99px;
-    height: 25px;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 18px;
+  width: 99px;
+  height: 25px;
 }
 
 .contact-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .contact-container img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 .contact-container a {
-    color: var(--color-white);
-    font-weight: 400;
-    font-size: 14px;
-    width: 85px;
-    height: 19px;
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 14px;
+  width: 85px;
+  height: 19px;
+}
+
+#space {
+  background-color: var(--bg-dark-blue);
+  height: 418px;
+}
+
+#space h2 {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 32px;
+  width: 357px;
+  height: 44px;
+}
+
+.space-card {
+  width: 960px;
+  height: 127px;
+  background-color: var(--bg-light-gray);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.space-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.space-card-description h3 {
+  color: var(--text-black);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.space-card-description p {
+  color: var(--text-black);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+#sports h2 {
+    margin-bottom: 40px;
 }
