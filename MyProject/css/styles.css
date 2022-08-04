@@ -17,11 +17,17 @@
   color: unset;
 }
 
+a, a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
 header {
   background-color: var(--color-red);
   height: 100px;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 .container {
@@ -86,10 +92,6 @@ header {
   margin: 20px 0;
 }
 
-.space-card-description {
-
-}
-
 .space-card-description h3 {
   color: var(--text-black);
   font-weight: 700;
@@ -107,9 +109,11 @@ header {
 
 #sports {
   height: 880px;
+  padding: 20px;
 }
 
 .sports-container {
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -148,26 +152,34 @@ header {
 footer {
   background-color: var(--text-black);
   height: 262px;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+
 }
 
-.footer-contact-container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+.content-footer {
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 960px;
+
+}
+
+.footer-links-container {
   display: flex;
   flex-direction: column;
+
+}
+
+.footer-links-container a {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  
+
 }
 
-.footer-contact-container a, p, address {
-  color: var(--color-white);
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.footer-contact-container img {
+.footer-links-container img {
   width: 30px;
   height: 30px;
   padding-right: 10px;
@@ -177,23 +189,15 @@ footer {
   width: 125px;
   display: flex;
   align-items: center;
-  margin-top: 66px;
 }
 
 .page-contact-twitter {
   width: 125px;
   display: flex;
   align-items: center;
-
 }
 
-.footer-politic {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 180px;
-  margin-top: 30px;
-  margin-bottom: 60px;
+.privacity-address {
+  text-align: center;
+  padding-top: 30px;
 }
